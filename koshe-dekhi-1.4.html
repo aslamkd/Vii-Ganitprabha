@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>koshe-dekhi-1.4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>.st-math-card{background:rgb(255,255,255);border:1px solid rgb(234,236,240);border-radius:12px;margin-bottom:25px;overflow:hidden;box-shadow:rgba(0,0,0,0.02) 0px 4px 6px -1px}.st-math-q{background-color:rgb(248,250,252);border-bottom:2px solid rgb(226,232,240);padding:18px 24px;font-size:1.1rem;font-weight:700;color:rgb(15,23,42);line-height:1.6}.st-math-ans{padding:24px;font-size:1.05rem;color:rgb(51,65,85);line-height:1.8}.st-final-ans{background-color:rgb(240,253,244);border-left:4px solid rgb(16,185,129);padding:12px 16px;border-radius:4px;margin-top:15px;color:rgb(6,95,70);font-weight:500}.st-sub-problem{margin-bottom:30px;padding-bottom:25px;border-bottom:1px dashed rgb(226,232,240)}.st-sub-problem:last-child{margin-bottom:0px;padding-bottom:0px;border-bottom:none}.st-sub-q{font-weight:700;color:rgb(30,41,59);margin-bottom:15px}.st-sub-ans{padding-left:20px;border-left:3px solid rgb(203,213,225);color:rgb(51,65,85);overflow-x:auto}.st-math-ans p{margin-bottom:12px}.st-math-ans p:last-child{margin-bottom:0px}@media (max-width:768px){.st-math-card{margin-bottom:15px;border-radius:8px}.st-math-q{padding:15px;font-size:1.05rem}.st-math-ans{padding:15px;font-size:0.95rem}.st-final-ans{padding:10px 12px;font-size:0.95rem;margin-top:12px}.st-sub-ans{padding-left:12px;border-left-width:2px}}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.sol-badge{display:inline-block;background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:700;letter-spacing:.5px;box-shadow:0 1px 2px rgba(0,0,0,.12);margin-bottom:1rem}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.solution-container,.solution-container *{box-sizing:border-box}html,body{max-width:100%}.solution-container{width:100%;max-width:100%;min-width:0}.solution-container p,.solution-container h1,.solution-container h2,.solution-container h3,.solution-container h4,.solution-container h5,.solution-container h6,.solution-container li{overflow-wrap:anywhere}.solution-container .stat-table-wrapper{width:100%;max-width:100%;min-width:0}.solution-container .stat-table{width:100%;max-width:100%;border-collapse:collapse}@media(max-width:900px){.solution-container .stat-table-wrapper{overflow-x:hidden}.solution-container .stat-table.is-overflowing{table-layout:fixed;width:100%!important;font-size:var(--fit-font-size,12px)!important}.solution-container .stat-table.is-overflowing th,.solution-container .stat-table.is-overflowing td{padding:var(--fit-cell-padding,4px)!important;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;min-width:0;line-height:1.4}}.solution-container .MathJax_Display{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;box-sizing:border-box}</style>
+<style id="st-additional-css">body{font-family:system-ui,-apple-system,"Noto Serif Bengali","Segoe UI",sans-serif;}
+
+/* Responsive tables with visible borders */
+.stat-table-wrapper,
+.table-responsive {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+table,
+.stat-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  box-sizing: border-box !important;
+  font-size: clamp(8px, 2.5vw, 14px) !important;
+}
+
+table th,
+table td,
+.stat-table th,
+.stat-table td {
+  border: 1px solid #555 !important;
+  padding: clamp(2px, 0.8vw, 8px) !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  line-height: 1.35 !important;
+  vertical-align: middle !important;
+}
+
+table img,
+td img,
+th img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 480px) {
+  table th,
+  table td {
+    padding: 2px !important;
+    font-size: clamp(7px, 2.2vw, 11px) !important;
+    line-height: 1.25 !important;
+  }
+}</style>
+<style id="st-sub-answer-layout-fix">.solution-container .st-sub-ans{overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;border-left:3px solid rgb(203,213,225)!important;padding-left:20px!important;padding-right:0!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important}.solution-container .st-sub-ans .MathJax_Display{max-width:100%!important;overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;white-space:normal!important}.solution-container .st-sub-ans .MathJax{max-width:100%!important;white-space:nowrap!important}</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js", "cancel.js"] },
+    tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]], processEscapes: true, skipTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    "HTML-CSS": { availableFonts: ["TeX"], preferredFont: "TeX", webFont: "TeX", mtextFontInherit: true, linebreaks: { automatic: false, width: "container" } },
+    showMathMenu: false, messageStyle: "none", skipStartupTypeset: true
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+<div class="solution-container"><div class="st-math-card">
+        <div class="st-math-q">1. নীচের চিত্রগুলির পরিসীমা মাপি :</div>
+        <div class="st-math-ans">
+            <p class="text-muted mb-4"><strong>ধারণা (Concept):</strong> কোনো সামতলিক জ্যামিতিক চিত্রের পরিসীমা (Perimeter) হলো তার চারপাশের বাহুগুলির দৈর্ঘ্যের মোট সমষ্টি।</p>
+            
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                       <polygon points="100,20 40,120 160,120" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></polygon>
+                       <text x="55" y="65" font-size="14" fill="#1e293b" transform="rotate(-60 55,65)">8 সেমি.</text>
+                       <text x="145" y="65" font-size="14" fill="#1e293b" transform="rotate(60 145,65)">8 সেমি.</text>
+                       <text x="100" y="140" font-size="14" fill="#1e293b" text-anchor="middle">5 সেমি.</text>
+                       <text x="100" y="85" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(i)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (i)-এর পরিসীমা:</strong></p>
+                    <p>চিত্রটি একটি ত্রিভুজ। এর বাহুগুলির দৈর্ঘ্য যথাক্রমে 8 সেমি., 8 সেমি. এবং 5 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 8 + 8 + 5 = 21$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 21 সেমি.।</div>
+                </div>
+            </div>
+
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="250" height="120" viewBox="0 0 250 120" xmlns="http://www.w3.org/2000/svg">
+                       <polygon points="40,20 220,90 70,90" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></polygon>
+                       <text x="35" y="60" font-size="14" fill="#1e293b" transform="rotate(-65 35,60)">5 সেমি.</text>
+                       <text x="130" y="45" font-size="14" fill="#1e293b" transform="rotate(20 130,45)">12 সেমি.</text>
+                       <text x="145" y="110" font-size="14" fill="#1e293b" text-anchor="middle">10 সেমি.</text>
+                       <text x="100" y="70" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(ii)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (ii)-এর পরিসীমা:</strong></p>
+                    <p>চিত্রটি একটি বিষমবাহু ত্রিভুজ। এর বাহুগুলির দৈর্ঘ্য যথাক্রমে 5 সেমি., 12 সেমি. এবং 10 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 5 + 12 + 10 = 27$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 27 সেমি.।</div>
+                </div>
+            </div>
+
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                       <rect x="30" y="30" width="90" height="90" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></rect>
+                       <text x="75" y="20" font-size="14" fill="#1e293b" text-anchor="middle">8 সেমি.</text>
+                       <text x="75" y="140" font-size="14" fill="#1e293b" text-anchor="middle">8 সেমি.</text>
+                       <text x="20" y="75" font-size="14" fill="#1e293b" transform="rotate(-90 20,75)" text-anchor="middle">8 সেমি.</text>
+                       <text x="130" y="75" font-size="14" fill="#1e293b" transform="rotate(90 130,75)" text-anchor="middle">8 সেমি.</text>
+                       <text x="75" y="80" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(iii)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (iii)-এর পরিসীমা:</strong></p>
+                    <p>চিত্রটি একটি বর্গক্ষেত্র যার প্রতিটি বাহুর দৈর্ঘ্য 8 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 8 + 8 + 8 + 8$ সেমি। (বা $4 \times 8$)</p>
+                    <p>$= 32$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 32 সেমি.।</div>
+                </div>
+            </div>
+
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="200" height="160" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+                       <polygon points="40,20 100,80 40,140" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></polygon>
+                       <polygon points="160,20 100,80 160,140" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></polygon>
+                       <text x="25" y="80" font-size="14" fill="#1e293b" transform="rotate(-90 25,80)" text-anchor="middle">10 সেমি.</text>
+                       <text x="175" y="80" font-size="14" fill="#1e293b" transform="rotate(90 175,80)" text-anchor="middle">10 সেমি.</text>
+                       <text x="60" y="45" font-size="12" fill="#1e293b" transform="rotate(45 60,45)">4 সেমি.</text>
+                       <text x="60" y="115" font-size="12" fill="#1e293b" transform="rotate(-45 60,115)">4 সেমি.</text>
+                       <text x="135" y="45" font-size="12" fill="#1e293b" transform="rotate(-45 135,45)">4 সেমি.</text>
+                       <text x="135" y="115" font-size="12" fill="#1e293b" transform="rotate(45 135,115)">4 সেমি.</text>
+                       <text x="60" y="85" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(iv)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (iv)-এর পরিসীমা:</strong></p>
+                    <p>এই চিত্রটির বাইরের সীমানার মোট ৬টি বাহু আছে। (ভেতরের বিন্দুতে মিলিত হয়েছে)।<br>বাহুগুলির দৈর্ঘ্য হলো: 10 সেমি., 4 সেমি., 4 সেমি., 10 সেমি., 4 সেমি. এবং 4 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 10 + 4 + 4 + 10 + 4 + 4 = 36$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 36 সেমি.।</div>
+                </div>
+            </div>
+
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="240" height="140" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+                       <rect x="40" y="30" width="160" height="80" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></rect>
+                       <text x="120" y="20" font-size="14" fill="#1e293b" text-anchor="middle">20 সেমি.</text>
+                       <text x="120" y="130" font-size="14" fill="#1e293b" text-anchor="middle">20 সেমি.</text>
+                       <text x="25" y="70" font-size="14" fill="#1e293b" transform="rotate(-90 25,70)" text-anchor="middle">10 সেমি.</text>
+                       <text x="215" y="70" font-size="14" fill="#1e293b" transform="rotate(90 215,70)" text-anchor="middle">10 সেমি.</text>
+                       <text x="120" y="75" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(v)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (v)-এর পরিসীমা:</strong></p>
+                    <p>চিত্রটি একটি আয়তক্ষেত্র। এর দৈর্ঘ্য 20 সেমি. এবং প্রস্থ 10 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 20 + 10 + 20 + 10 = 60$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 60 সেমি.।</div>
+                </div>
+            </div>
+
+            <div class="st-sub-problem">
+                <div class="text-center mb-3">
+                    <svg width="240" height="150" viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg">
+                       <polygon points="40,30 140,30 200,75 140,120 40,120" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"></polygon>
+                       <text x="25" y="75" font-size="14" fill="#1e293b" transform="rotate(-90 25,75)" text-anchor="middle">6 সেমি.</text>
+                       <text x="90" y="20" font-size="14" fill="#1e293b" text-anchor="middle">8 সেমি.</text>
+                       <text x="90" y="140" font-size="14" fill="#1e293b" text-anchor="middle">8 সেমি.</text>
+                       <text x="175" y="45" font-size="14" fill="#1e293b" transform="rotate(37 175,45)" text-anchor="middle">3 সেমি.</text>
+                       <text x="175" y="105" font-size="14" fill="#1e293b" transform="rotate(-37 175,105)" text-anchor="middle">3 সেমি.</text>
+                       <text x="90" y="80" font-size="16" fill="#1e293b" font-weight="bold" text-anchor="middle">(vi)</text>
+                    </svg>
+                </div>
+                <div class="st-sub-ans">
+                    <p><strong>চিত্র (vi)-এর পরিসীমা:</strong></p>
+                    <p>চিত্রটি একটি পঞ্চভুজ। এর ৫টি বাহুর দৈর্ঘ্য যথাক্রমে 6 সেমি., 8 সেমি., 3 সেমি., 3 সেমি. এবং 8 সেমি.।</p>
+                    <p>$\therefore$ পরিসীমা $= 6 + 8 + 3 + 3 + 8 = 28$ সেমি。</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 28 সেমি.।</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. নীচে চিত্রগুলি কতটা জায়গা দখল করে আছে দেখি। [প্রতিটি ক্ষুদ্রতম বর্গঘর 1 বর্গসেমি.]</div>
+        <div class="st-math-ans">
+            <p class="text-muted mb-3"><strong>নিয়ম:</strong> ছক-কাগজে চিত্রগুলি যতগুলি সম্পূর্ণ ঘর এবং অর্ধেকের বেশি ঘর দখল করে থাকে, সেগুলি গুনে ক্ষেত্রফল নির্ণয় করা হয়।</p>
+            <div class="st-sub-ans">
+                <ul>
+                    <li><strong>(a) নং চিত্র:</strong> এটি ছক কাগজে 24 টি পূর্ণ বর্গঘর দখল করেছে। তাই এর ক্ষেত্রফল = $24$ বর্গসেমি.।</li>
+                    <li><strong>(b) নং চিত্র:</strong> এটি ছক কাগজে 21 টি পূর্ণ বর্গঘর দখল করেছে। তাই এর ক্ষেত্রফল = $21$ বর্গসেমি.।</li>
+                    <li><strong>(c) নং চিত্র:</strong> এটি ছক কাগজে 20 টি পূর্ণ বর্গঘর দখল করেছে। তাই এর ক্ষেত্রফল = $20$ বর্গসেমি.।</li>
+                    <li><strong>(d) নং চিত্র:</strong> এটি ছক কাগজে 16 টি পূর্ণ বর্গঘর দখল করেছে। তাই এর ক্ষেত্রফল = $16$ বর্গসেমি.।</li>
+                    <li><strong>(e) নং চিত্র:</strong> এটি ছক কাগজে 16 টি পূর্ণ বর্গঘর দখল করেছে। তাই এর ক্ষেত্রফল = $16$ বর্গসেমি.।</li>
+                    <li><strong>(f) নং চিত্র:</strong> এটি একটি উপবৃত্তাকার চিত্র, যা আনুমানিকভাবে প্রায় 14 টি পূর্ণ বর্গঘরের সমান জায়গা দখল করেছে। তাই এর ক্ষেত্রফল $\approx 14$ বর্গসেমি.।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">3. নিজেরা ছক-কাগজ তৈরি করে 25 বর্গঘর, 40 বর্গঘর, 36 বর্গঘর ও 62 বর্গঘর দখল করে আছে এমন চিত্র আঁকি।</div>
+        <div class="st-math-ans">
+            <p><em>(এটি ছাত্রদের নিজেদের হাতে-কলমে করার কাজ। একটি ছক কাগজ নিয়ে তাতে নির্দিষ্ট সংখ্যক ঘর রং করে এই চিত্রগুলি সহজে আঁকা যেতে পারে।)</em></p>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">4. নীচের ছক-কাগজের বর্গক্ষেত্রগুলোর এক একটি বাহুর দৈর্ঘ্য মাপি এবং ক্ষেত্রফল নির্ণয় করি। [ধরি, একটি ক্ষুদ্রতম বর্গঘর = এক বর্গসেমি.]</div>
+        <div class="st-math-ans">
+            <p class="text-muted mb-3">বর্গক্ষেত্রের ক্ষেত্রফল = $(\text{বাহুর দৈর্ঘ্য})^2$</p>
+            <div class="st-sub-ans">
+                <ul>
+                    <li><strong>(a) নং চিত্র:</strong> এটি একটি বর্গক্ষেত্র যার প্রতিটি বাহু বরাবর 3 টি করে ঘর আছে।<br>$\therefore$ বাহুর দৈর্ঘ্য = $3$ সেমি.<br>ক্ষেত্রফল = $3 \times 3 = 9$ বর্গসেমি.।</li>
+                    <li><strong>(b) নং চিত্র:</strong> এটি একটি বর্গক্ষেত্র যার প্রতিটি বাহু বরাবর 4 টি করে ঘর আছে।<br>$\therefore$ বাহুর দৈর্ঘ্য = $4$ সেমি.<br>ক্ষেত্রফল = $4 \times 4 = 16$ বর্গসেমি.।</li>
+                    <li><strong>(c) নং চিত্র:</strong> এটি একটি বর্গক্ষেত্র যার প্রতিটি বাহু বরাবর 6 টি করে ঘর আছে।<br>$\therefore$ বাহুর দৈর্ঘ্য = $6$ সেমি.<br>ক্ষেত্রফল = $6 \times 6 = 36$ বর্গসেমি.।</li>
+                    <li><strong>(d) নং চিত্র:</strong> এটি একটি বর্গক্ষেত্র যার প্রতিটি বাহু বরাবর 5 টি করে ঘর আছে।<br>$\therefore$ বাহুর দৈর্ঘ্য = $5$ সেমি.<br>ক্ষেত্রফল = $5 \times 5 = 25$ বর্গসেমি.।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">5. বর্গমূল নির্ণয় করি :</div>
+        <div class="st-math-ans">
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(a) $5^2 \times 8^2$</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{5^2 \times 8^2} = 5 \times 8 = 40$</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 40</div>
+                </div>
+            </div>
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(b) 4225</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{4225} = 65$<br><em>(ভাগ পদ্ধতিতে বর্গমূল করলে 65 পাওয়া যাবে)</em></p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 65</div>
+                </div>
+            </div>
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(c) 10609</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{10609} = 103$</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 103</div>
+                </div>
+            </div>
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(d) 108241</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{108241} = 329$</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 329</div>
+                </div>
+            </div>
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(e) 186624</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{186624} = 432$</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 432</div>
+                </div>
+            </div>
+            <div class="st-sub-problem">
+                <div class="st-sub-q">(f) $(24^2 + 10^2)$</div>
+                <div class="st-sub-ans">
+                    <p>$\sqrt{24^2 + 10^2} = \sqrt{576 + 100} = \sqrt{676} = 26$</p>
+                    <div class="st-final-ans"><strong>উত্তর:</strong> 26</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">6. 3000-এর নিকটতম পূর্ণবর্গ সংখ্যা খুঁজি যা (a) 3000 থেকে বড়ো (b) 3000 থেকে ছোটো।</div>
+        <div class="st-math-ans">
+            <p>প্রথমে 3000 এর বর্গমূল করার চেষ্টা করি:<br>
+            দেখা যায় $54 \times 54 = 2916$<br>
+            এবং $55 \times 55 = 3025$</p>
+            <p>যেহেতু 3000 সংখ্যাটি 2916 এবং 3025 এর মাঝে অবস্থিত, তাই:</p>
+            <ul>
+                <li><strong>(a) 3000 থেকে বড়ো নিকটতম পূর্ণবর্গ সংখ্যা:</strong> $55^2 = 3025$</li>
+                <li><strong>(b) 3000 থেকে ছোটো নিকটতম পূর্ণবর্গ সংখ্যা:</strong> $54^2 = 2916$</li>
+            </ul>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">7. 9545 থেকে কোন ক্ষুদ্রতম ধনাত্মক পূর্ণসংখ্যা বিয়োগ করলে বিয়োগফল একটি পূর্ণবর্গ সংখ্যা হবে হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>প্রথমে 9545 এর নিকটতম পূর্ণবর্গ সংখ্যা নির্ণয় করি:<br>
+            আমরা জানি, $97 \times 97 = 9409$<br>
+            এবং $98 \times 98 = 9604$</p>
+            <p>যেহেতু 9545 থেকে <strong>বিয়োগ</strong> করে পূর্ণবর্গ সংখ্যা আনতে হবে, তাই 9409 কেই নিতে হবে।<br>
+            বিয়োগ করতে হবে = $9545 - 9409 = 136$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> 136 বিয়োগ করতে হবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">8. 5050-এর সঙ্গে কোন ক্ষুদ্রতম ধনাত্মক পূর্ণসংখ্যা যোগ করলে যোগফল একটি পূর্ণবর্গ সংখ্যা হবে লিখি।</div>
+        <div class="st-math-ans">
+            <p>প্রথমে 5050 এর নিকটতম পূর্ণবর্গ সংখ্যা নির্ণয় করি:<br>
+            আমরা জানি, $71 \times 71 = 5041$<br>
+            এবং $72 \times 72 = 5184$</p>
+            <p>যেহেতু 5050 এর সাথে <strong>যোগ</strong> করে পূর্ণবর্গ সংখ্যা আনতে হবে, তাই 5184 কেই নিতে হবে।<br>
+            যোগ করতে হবে = $5184 - 5050 = 134$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> 134 যোগ করতে হবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">9. বারুইপুরের এক পেয়ারা বাগানে 1764টি পেয়ারাগাছ লাগানো হয়েছে। যতগুলি সারিতে পেয়ারাগাছ লাগানো হয়েছে প্রতি সারিতে ততগুলি পেয়ারাগাছ আছে। হিসাব করে দেখি প্রতি সারিতে কতগুলি পেয়ারাগাছ আছে।</div>
+        <div class="st-math-ans">
+            <p>যেহেতু সারির সংখ্যা এবং প্রতি সারিতে গাছের সংখ্যা সমান, তাই প্রতি সারিতে গাছের সংখ্যা হবে মোট গাছের সংখ্যার বর্গমূল।</p>
+            <p>$\therefore$ প্রতি সারিতে পেয়ারাগাছের সংখ্যা = $\sqrt{1764}$</p>
+            <p>বর্গমূল নির্ণয়: $\sqrt{1764} = 42$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> প্রতি সারিতে 42 টি পেয়ারাগাছ আছে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">10. হোমিওপ্যাথি ওষুধ রাখার বাক্সে 1225টি শিশি রাখার ঘর আছে। ঘরগুলি এমনভাবে সাজানো আছে যে যতগুলি সারি আছে প্রতি সারিতে ততগুলি ঘর আছে। হিসাব করে দেখি বাক্সে কতগুলি সারি আছে।</div>
+        <div class="st-math-ans">
+            <p>যেহেতু সারির সংখ্যা এবং প্রতি সারিতে ঘরের সংখ্যা সমান, তাই সারির সংখ্যা হবে মোট ঘরের সংখ্যার বর্গমূল।</p>
+            <p>$\therefore$ সারির সংখ্যা = $\sqrt{1225}$</p>
+            <p>বর্গমূল নির্ণয়: $\sqrt{1225} = 35$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> বাক্সে মোট 35 টি সারি আছে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">11. তিনটি ধনাত্মক পূর্ণসংখ্যার প্রথম ও দ্বিতীয়টির গুণফল 24, দ্বিতীয় ও তৃতীয়ের গুণফল 48 এবং প্রথম ও তৃতীয়ের গুণফল 32; সংখ্যা তিনটি কী কী তা হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>ধরি, সংখ্যা তিনটি হলো $x, y$ এবং $z$।<br>
+            প্রশ্নানুসারে,<br>
+            $x \times y = 24$<br>
+            $y \times z = 48$<br>
+            $x \times z = 32$</p>
+            
+            <p>উপরের তিনটি সমীকরণ গুণ করে পাই:<br>
+            $(x \times y) \times (y \times z) \times (x \times z) = 24 \times 48 \times 32$<br>
+            $\Rightarrow x^2 \times y^2 \times z^2 = 24 \times (24 \times 2) \times 32$<br>
+            $\Rightarrow (xyz)^2 = 24^2 \times 64$<br>
+            $\Rightarrow (xyz)^2 = 24^2 \times 8^2$<br>
+            $\Rightarrow xyz = \sqrt{24^2 \times 8^2} = 24 \times 8 = 192$</p>
+            
+            <p>এখন,<br>
+            তৃতীয় সংখ্যা ($z$) = $\frac{xyz}{xy} = \frac{192}{24} = 8$<br>
+            প্রথম সংখ্যা ($x$) = $\frac{xyz}{yz} = \frac{192}{48} = 4$<br>
+            দ্বিতীয় সংখ্যা ($y$) = $\frac{xyz}{xz} = \frac{192}{32} = 6$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> সংখ্যা তিনটি হলো 4, 6 এবং 8।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">12. শিবাজি সঙ্ঘের ক্লাবে যতজন সদস্য আছে প্রত্যেকে সদস্য সংখ্যার পাঁচগুণ টাকা চাঁদা দিয়েছে। মোট 515205 টাকা চাঁদা উঠেছে। হিসাব করে দেখি ক্লাবের সদস্য সংখ্যা কত।</div>
+        <div class="st-math-ans">
+            <p>ধরি, ক্লাবের সদস্য সংখ্যা = $x$ জন।<br>
+            প্রত্যেকে চাঁদা দিয়েছে সদস্য সংখ্যার পাঁচগুণ = $5x$ টাকা।</p>
+            <p>$\therefore$ মোট চাঁদা উঠেছে = $x \times 5x = 5x^2$ টাকা।</p>
+            <p>প্রশ্নানুসারে,<br>
+            $5x^2 = 515205$<br>
+            $\Rightarrow x^2 = \frac{515205}{5} = 103041$<br>
+            $\Rightarrow x = \sqrt{103041}$<br>
+            $\Rightarrow x = 321$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> ক্লাবের সদস্য সংখ্যা 321 জন।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">13. দার্জিলিং-এর এক বাগানের মালিক মোট 1080টি কমলালেবু পেড়েছেন। সেই কমলালেবু কতগুলি ঝুড়ি এনে তার প্রতিটিতে ঝুড়ির সংখ্যার সমান কমলালেবু রাখতে গিয়ে দেখেন 9টি কমলালেবু কম পড়ছে। তিনি কতগুলি ঝুড়ি এনেছিলেন হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>ধরি, ঝুড়ির সংখ্যা = $x$ টি।<br>
+            প্রতিটি ঝুড়িতে কমলালেবু রাখা হয়েছে = $x$ টি।<br>
+            $\therefore$ মোট কমলালেবুর প্রয়োজন ছিল = $x \times x = x^2$ টি।</p>
+            
+            <p>কিন্তু দেখা গেল 9 টি কমলালেবু কম পড়ছে।<br>
+            অর্থাৎ, তার কাছে কমলালেবু ছিল = $(x^2 - 9)$ টি।</p>
+            
+            <p>প্রশ্নানুসারে,<br>
+            $x^2 - 9 = 1080$<br>
+            $\Rightarrow x^2 = 1080 + 9$<br>
+            $\Rightarrow x^2 = 1089$<br>
+            $\Rightarrow x = \sqrt{1089} = 33$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> তিনি মোট 33 টি ঝুড়ি এনেছিলেন।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">14. বকুলতলার একটি পুকুর সংস্কার করতে পঞ্চায়েত যতজন লোক নিযুক্ত করেছিলেন তারা ততোদিন কাজ করে মোট 12375 টাকা পেয়েছেন। প্রত্যেকে দৈনিক যদি 55 টাকা পান, তবে কতজন লোক কাজ করেছিলেন হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>ধরি, লোক সংখ্যা = $x$ জন।<br>
+            যেহেতু তারা ততোদিন কাজ করেছেন, তাই দিন সংখ্যা = $x$ দিন।</p>
+            <p>১ জন ১ দিনে পান 55 টাকা।<br>
+            $\therefore$ $x$ জন $x$ দিনে পাবেন = $x \times x \times 55 = 55x^2$ টাকা।</p>
+            <p>প্রশ্নানুসারে,<br>
+            $55x^2 = 12375$<br>
+            $\Rightarrow x^2 = \frac{12375}{55}$<br>
+            $\Rightarrow x^2 = 225$<br>
+            $\Rightarrow x = \sqrt{225} = 15$</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> মোট 15 জন লোক কাজ করেছিলেন।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">15. চার অঙ্কের কোন বৃহত্তম পূর্ণবর্গ সংখ্যা 12, 18 ও 30 দ্বারা বিভাজ্য হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>প্রথমে 12, 18 ও 30 এর ল.সা.গু নির্ণয় করতে হবে:<br>
+            $12 = 2 \times 2 \times 3 = 2^2 \times 3$<br>
+            $18 = 2 \times 3 \times 3 = 2 \times 3^2$<br>
+            $30 = 2 \times 3 \times 5$</p>
+            <p>$\therefore$ ল.সা.গু = $2^2 \times 3^2 \times 5 = 4 \times 9 \times 5 = 180$</p>
+            
+            <p>180 কে পূর্ণবর্গ করতে হলে একটি 5 দিয়ে গুণ করতে হবে।<br>
+            কারণ $180 = 2^2 \times 3^2 \times 5$ (এখানে 5 এর জোড়া নেই)।<br>
+            $\therefore$ ক্ষুদ্রতম পূর্ণবর্গ সংখ্যাটি = $180 \times 5 = 900$</p>
+            
+            <p>এখন, 900 এর পরবর্তী পূর্ণবর্গ গুণিতকগুলি বের করি:<br>
+            $900 \times 1^2 = 900$<br>
+            $900 \times 2^2 = 900 \times 4 = 3600$<br>
+            $900 \times 3^2 = 900 \times 9 = 8100$<br>
+            $900 \times 4^2 = 900 \times 16 = 14400$ (এটি 5 অঙ্কের হয়ে যাচ্ছে)।</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> চার অঙ্কের বৃহত্তম পূর্ণবর্গ সংখ্যাটি হলো 8100।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">16. পাঁচ অঙ্কের কোন ক্ষুদ্রতম পূর্ণবর্গ সংখ্যা 8, 15, 20 ও 25 দ্বারা বিভাজ্য হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>প্রথমে 8, 15, 20 ও 25 এর ল.সা.গু নির্ণয় করতে হবে:<br>
+            $8 = 2^3$<br>
+            $15 = 3 \times 5$<br>
+            $20 = 2^2 \times 5$<br>
+            $25 = 5^2$</p>
+            <p>$\therefore$ ল.সা.গু = $2^3 \times 3 \times 5^2 = 8 \times 3 \times 25 = 600$</p>
+            
+            <p>600 কে পূর্ণবর্গ করতে হলে উৎপাদকে বিশ্লেষণ দেখি: $600 = 2^2 \times 2 \times 3 \times 5^2$।<br>
+            এখানে একটি $2$ এবং একটি $3$ এর জোড়া নেই। তাই $2 \times 3 = 6$ দিয়ে গুণ করতে হবে।<br>
+            $\therefore$ ক্ষুদ্রতম পূর্ণবর্গ সংখ্যাটি = $600 \times 6 = 3600$</p>
+            
+            <p>কিন্তু 3600 চার অঙ্কের সংখ্যা। আমাদের পাঁচ অঙ্কের ক্ষুদ্রতম সংখ্যা লাগবে।<br>
+            $3600$ এর পরবর্তী পূর্ণবর্গ গুণিতকটি হলো:<br>
+            $3600 \times 2^2 = 3600 \times 4 = 14400$ (এটি 5 অঙ্কের)।</p>
+            <div class="st-final-ans"><strong>উত্তর:</strong> পাঁচ অঙ্কের ক্ষুদ্রতম পূর্ণবর্গ সংখ্যাটি হলো 14400।</div>
+        </div>
+    </div></div>
+<script>
+(function () {
+  function renderMathJax() {
+    if (!window.MathJax || !MathJax.Hub) return;
+    var target = document.querySelector(".solution-container") || document.body;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", renderMathJax, { once: true });
+  else renderMathJax();
+  window.abvrpMc_rerenderMathJax = renderMathJax;
+})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer;function fit(){var small=window.matchMedia('(max-width:900px)').matches;root.querySelectorAll('.stat-table').forEach(function(table){table.classList.remove('is-overflowing');table.style.removeProperty('--fit-font-size');table.style.removeProperty('--fit-cell-padding');if(!small)return;var wrapper=table.closest('.stat-table-wrapper');if(!wrapper)return;var oldLayout=table.style.tableLayout,oldWidth=table.style.width;table.style.tableLayout='auto';table.style.width='max-content';var available=wrapper.clientWidth,natural=table.scrollWidth;table.style.tableLayout=oldLayout;table.style.width=oldWidth;if(!available||natural<=available+1)return;table.classList.add('is-overflowing');var cols=1;table.querySelectorAll('tr').forEach(function(row){var count=0;row.querySelectorAll('th,td').forEach(function(cell){count+=Math.max(1,cell.colSpan||1)});cols=Math.max(cols,count)});var font=cols>=10?8:cols>=7?9:cols>=5?10:11;table.style.setProperty('--fit-font-size',font+'px');table.style.setProperty('--fit-cell-padding',cols>=7?'2px':'3px');requestAnimationFrame(function(){var size=font;while(table.scrollWidth>wrapper.clientWidth+1&&size>7){size--;table.style.setProperty('--fit-font-size',size+'px')}})})}function schedule(){clearTimeout(timer);timer=setTimeout(fit,100)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit,{once:true});else fit();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);ro.observe(root)}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer=0;function fit(){root.querySelectorAll('.st-sub-ans .MathJax').forEach(function(math){var box=math.closest('.st-sub-ans');if(!box)return;var original=parseFloat(math.getAttribute('data-st-fit-original'));if(!original){original=parseFloat(getComputedStyle(math).fontSize)||16;math.setAttribute('data-st-fit-original',String(original))}math.style.fontSize=original+'px';var style=getComputedStyle(box);var available=box.clientWidth-(parseFloat(style.paddingLeft)||0)-(parseFloat(style.paddingRight)||0);if(!available||available<1)return;var width=math.getBoundingClientRect().width;if(width>available+0.5){var scaled=Math.max(5,original*(available/width)*0.96);math.style.fontSize=scaled+'px'}})}function schedule(){if(timer)cancelAnimationFrame(timer);timer=requestAnimationFrame(fit)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule,{once:true});else schedule();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);root.querySelectorAll('.st-sub-ans').forEach(function(el){ro.observe(el)})}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}if(window.MathJax&&MathJax.Hub){try{MathJax.Hub.Queue(function(){schedule()})}catch(e){}}})();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/aslamkd/MadhyamikGanitprabha@main/koshe-dekhi-tools.js" charset="utf-8"></script>
+</body>
+</html>
